@@ -1,0 +1,20 @@
+service: reboot
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  timeout: 60
+
+plugins:
+  - serverless-offline
+
+functions:
+  reboot:
+    handler: handler.EC2Reboot
+    events:
+      - http:
+          path: /reboot
+          method: POST
+          cors: true
