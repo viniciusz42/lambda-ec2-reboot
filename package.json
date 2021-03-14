@@ -1,6 +1,6 @@
 {
-  "name": "reboot",
-  "version": "1.0.0",
+  "name": "lambda-ec2-reboot",
+  "version": "0.0.1",
   "description": "",
   "main": "handler.js",
   "author": "",
